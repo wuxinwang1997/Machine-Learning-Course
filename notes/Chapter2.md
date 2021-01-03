@@ -188,9 +188,11 @@ $$
 \nabla_{\hat{\pmb{w}}}L=\hat{\pmb{w}}-\sum\limits^n_{i=1}\alpha_iy_i\pmb{x}_i=0 & \Rightarrow \hat{\pmb{w}}=\sum\limits^n_{i=1}\alpha_iy_i\pmb{x}_i \\
 \nabla_{\hat{b}}L = -\sum\limits^n_{i=1}\alpha_iy_i=0 &\Rightarrow \sum\limits^n_{i=1}\alpha_iy_i=0 \\
 \forall i~\alpha_i(y_i(\hat{\pmb{w}}^T\pmb{x}_i+\hat{b})-1)=0 &\Rightarrow \alpha_i \or y_i(\hat{\pmb{w}}^T\pmb{x}_i+\hat{b})=1
-\end{cases}
-\end{align} \label{24}
+\end{cases} \label{24}
+\end{align}
 $$
+
+
 将KKT条件代入可得
 $$
 \min_{\hat{\pmb{w}},\hat{b}}L(\hat{\pmb{w}},\hat{b};\pmb{\alpha})=-\frac{1}{2}\sum\limits^n_{i=1}\sum\limits^n_{j=1}\alpha_i\alpha_jy_iy_j\textcolor{red}{(\pmb{x}_i^T\pmb{x}_j)}+\sum\limits^n_{i=1}\alpha_i
@@ -216,7 +218,7 @@ b^* &= y_j-\sum\limits^n_{i=1}\alpha_i^*y_i(\pmb{x}_i^T \cdot \pmb{x}_j)
 $$
 **证明**
 
-由$\ref{24}$可知
+由$\ref{24}$知
 $$
 \pmb{w}^* = \sum_i\alpha_i^*y_i\pmb{x}_i
 $$
@@ -297,8 +299,8 @@ $$
 \nabla_{\pmb{\xi}_i}L=C-\alpha_i-\beta_i & \Rightarrow \alpha_i+\beta_i = C \\
 \forall i\quad\alpha_i(y_i(\hat{\pmb{w}}^T\pmb{x}_i+\hat{b})-1+\xi_i) = 0 &\Rightarrow \alpha_i \or y_i(\hat{\pmb{w}}^T\pmb{x}_i+\hat{b}) = 1-\xi_i \\
 \forall i \beta_i\xi_i = 0 &\Rightarrow \beta_i = 0\or \xi_i=0
-\end{cases}
-\end{align} \label{42}
+\end{cases} \label{42}
+\end{align}
 $$
 
 #### 学习的对偶算法
