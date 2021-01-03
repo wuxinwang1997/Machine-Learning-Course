@@ -206,7 +206,7 @@ def pla(self):
 
   - 上面两步可以从直觉上表明PLA可以收敛，下面给出更严格的证明
 
-  - **Novikoff定理** [^ 1] 设训练数据集$T=\{(x_1,y_1),(x_2,y_2),\cdots,(x_N,y_N),\}$是线性可分的，其中$x_i \in \mathcal{X}=\pmb{R}^n,y_i=\{-1,+1\},i=1,2,\cdots,N$，记$\pmb{\hat{w}}=(\pmb{w}^T,b)^T$，$\pmb{\hat{x}}=(\pmb{x},1)^T$，则$\pmb{\hat{x}},\pmb{\hat{w}} \in \pmb{R}^{n+1}$，显然$\pmb{\hat{w}}\cdot\pmb{\hat{x}}=\pmb{w}\cdot\pmb{x}+b$
+  - **Novikoff定理** [^1] 设训练数据集$T=\{(x_1,y_1),(x_2,y_2),\cdots,(x_N,y_N),\}$是线性可分的，其中$x_i \in \mathcal{X}=\pmb{R}^n,y_i=\{-1,+1\},i=1,2,\cdots,N$，记$\pmb{\hat{w}}=(\pmb{w}^T,b)^T$，$\pmb{\hat{x}}=(\pmb{x},1)^T$，则$\pmb{\hat{x}},\pmb{\hat{w}} \in \pmb{R}^{n+1}$，显然$\pmb{\hat{w}}\cdot\pmb{\hat{x}}=\pmb{w}\cdot\pmb{x}+b$
 
     - 存在满足条件$\|\pmb{\hat{w}}_{opt}\|=1$的超平面$\pmb{\hat{w}}_{opt}\cdot\pmb{\hat{x}}=\pmb{w}_{opt}\cdot\pmb{x}+b_{opt}=0$将数据集完全正确分开，且存在$\gamma > 0$，对所有$i=1,2,\cdots,N$
       $$
@@ -371,4 +371,7 @@ def update(self, label_i, data_i):
 
 ## 参考文献
 
-[^1]: 《统计学习方法（第二版）》第二章
+[^1]:李航. 统计学习方法 第2版[M]. 清华大学出版社, 2019.
+
+
+
